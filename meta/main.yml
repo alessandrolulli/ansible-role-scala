@@ -12,9 +12,10 @@ galaxy_info:
   categories:
   - development
 dependencies:
-  - { role: "azavea.java",
-      when:
-        "{{ ansible_distribution_version | version_compare('16.04','<') }}" }
-  - { role: "azavea.java", java_major_version: "8", java_version: "8u91*",
-      when:
-        "{{ ansible_distribution_version | version_compare('16.04','>=') }}" }
+  - { role: "java",
+      src: "https://github.com/alessandrolulli/ansible-role-java"}
+      #when:
+       # "{{ ansible_distribution_version | version_compare('16.04','<') }}" }
+  #- { role: "java", java_major_version: "8", java_version: "8u91*",
+  #    when:
+  #      "{{ ansible_distribution_version | version_compare('16.04','>=') }}" }
