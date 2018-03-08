@@ -1,1 +1,2 @@
-- src: https://github.com/alessandrolulli/ansible-role-java
+- name: scala
+  src: https://github.com/alessandrolulli/ansible-role-scala
